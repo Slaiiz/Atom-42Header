@@ -1,0 +1,22 @@
+# See https://atom.io/docs/latest/hacking-atom-package-word-count#menus for more details
+'context-menu':
+  'atom-text-editor': [
+    {
+      'label': 'Generate 42Header'
+      'command': 'atom42-header:generate'
+    }
+  ]
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'atom42-header'
+      'submenu': [
+        {
+          'label': 'Generate'
+          'command': 'atom42-header:generate'
+        }
+      ]
+    ]
+  }
+]
