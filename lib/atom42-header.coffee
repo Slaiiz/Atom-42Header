@@ -72,7 +72,7 @@ insertEmptyLine = ->
 
 insertConcat = (slices...) ->
 	editor.moveToBeginningOfLine()
-	editor.insertText(makeLeftMargin() + slices.join(' ') + makeRightMargin())
+	editor.insertText(makeLeftMargin() + slices.join('') + makeRightMargin())
 	editor.insertNewline()
 
 makeLeftMargin = ->
@@ -82,7 +82,7 @@ makeRightMargin = ->
 	return Array(logo.rightStandardMargin - logo.tokenLength[1] + 1).join(' ') + logo.token[1];
 
 makeCentralGap = (left, right) ->
-	return Array(logo.lineStandardWidth - makeLeftMargin().length - makeRightMargin().length - left.length - right.length).join(' ')
+	return Array(logo.lineStandardWidth - makeLeftMargin().length - makeRightMargin().length - left.length - right.length + 1).join(' ')
 
 makeFilename = ->
 	filename = editor.getPath()
