@@ -1,4 +1,4 @@
-# atom42-header package
+# 42Header package
 
 A short description of your package.
 

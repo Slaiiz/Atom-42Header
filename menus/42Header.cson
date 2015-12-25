@@ -3,18 +3,18 @@
   'atom-text-editor': [
     {
       'label': 'Generate 42Header'
-      'command': 'atom42-header:generate'
+      'command': '42Header:generate'
     }
   ]
 'menu': [
   {
     'label': 'Packages'
     'submenu': [
-      'label': 'atom42-header'
+      'label': '42Header'
       'submenu': [
         {
           'label': 'Generate'
-          'command': 'atom42-header:generate'
+          'command': '42Header:generate'
         }
       ]
     ]
