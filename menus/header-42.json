@@ -1,0 +1,26 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Create Header 42",
+        "command": "header-42:create"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "Header 42",
+          "submenu": [
+            {
+              "label": "Create",
+              "command": "header-42:create"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
