@@ -17,6 +17,10 @@
             {
               "label": "Create",
               "command": "header-42:create"
+            },
+            {
+              "label": "Update",
+              "command": "header-42:update"
             }
           ]
         }
